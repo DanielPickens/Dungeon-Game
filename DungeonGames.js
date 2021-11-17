@@ -4,14 +4,14 @@
 // and essientially if the knight continues to move right or down
 //Then the The knight's hp at 'm - 1, n' or 'm, n - 1' should be equal to 1
 //We can make this approach using Recursion starting from the top left
-//Where, in each of the recursive calls
-	// We need to traverse by moving down or to the right.
+//Where, in each of the recursive call
+// We need to traverse by moving down or to the right.
 // We will choose a path for the knight that gives us the least amount of hp
 //where we can finally find the min health the knight needs to reach the end from a specific square
-/
 
-tc: O(n^2)
-sc: O(n)
+
+//tc: O(n^2)
+//sc: O(n)
 
 var calculateMinimumHP = (dungeon) => {
     const v = dungeon.length - 1, m = dungeon[0].length - 1;
@@ -44,7 +44,7 @@ var calculateMinimumHP = (dungeon) => {
 
 
 
-Solution 2: Dijkstra's algo:
+//Solution 2: Dijkstra's algo:
 //We can solve this also by using a DFS with a reqular stack and we wouldn't neccesarily arrive to the solution with a faster runtime. However,
 // We will use Disjktra' algorithm  to increase the speed of the search while making sure optimality it is guaranteed;
 //We  can use Dijkstra over the minimum accumulative HP to find a path towards the princess
@@ -54,8 +54,8 @@ Solution 2: Dijkstra's algo:
  // The idea is that we will use the said distance matrix to trace the parent so we can reconstruct the path leading to the destination.
 
 
-tc: O(nlogn)
-sc: O(n)
+//tc: O(nlogn)
+//sc: O(n)
 
 
 var calculateMinimumHP = (dungeon) => {
