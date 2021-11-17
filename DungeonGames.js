@@ -46,9 +46,9 @@ var calculateMinimumHP = (dungeon) => {
 
 //Solution 2: Dijkstra's algo:
 //We can solve this also by using a DFS with a reqular stack and we wouldn't neccesarily arrive to the solution with a faster runtime. However,
-// We will use Disjktra' algorithm  to increase the speed of the search while making sure optimality it is guaranteed;
-//We  can use Dijkstra over the minimum accumulative HP to find a path towards the princess
-// and we want to also save the parents along the way, so we could reconstruct the route
+// We will use Disjktra' algorithm  to increase the speed of the search while making sure optimally it is guaranteed;
+//We can use Dijkstra over the minimum accumulative HP to find a path towards the princess
+// and we want to also save the parents along the way, so we could reconstruct the route itself.
 //And, once we get to the destination, we can trace back and find the mininum accumulative HP along the way to induce the HP needed at the beginning of the trip
 // We can then initialize a distance matrix.
  // The idea is that we will use the said distance matrix to trace the parent so we can reconstruct the path leading to the destination.
