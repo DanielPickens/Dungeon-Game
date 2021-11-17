@@ -1,10 +1,10 @@
- //We can initiate a 2D array where the dp array will represent the min health the knight needs to reach the end from a specific square
-// And we can then predict the amount the health that the knight should end on after he has saved the princess.
-//By evaluating the position of the knight If the princess is located at 'm - 1, n - 1'
-// and essientially if the knight continues to move right or down
+//We can initiate a 2D array where the dp array will represent the min health the knight needs to reach the end from a specific square
+// And we can then predict the amount the health that the knight should end on after he has saved the princess
+//By evaluating the position of the knight if the princess is located at 'm - 1, n - 1'.
+// Essientially if the knight continues to move right or down
 //Then the The knight's hp at 'm - 1, n' or 'm, n - 1' should be equal to 1
-//We can make this approach using Recursion starting from the top left
-//Where, in each of the recursive call
+//We can make this approach using recursion starting from the top left
+//Where, in each of the recursive calls
 // We need to traverse by moving down or to the right.
 // We will choose a path for the knight that gives us the least amount of hp
 //where we can finally find the min health the knight needs to reach the end from a specific square
@@ -46,7 +46,7 @@ var calculateMinimumHP = (dungeon) => {
 
 //Solution 2: Dijkstra's algo:
 //We can solve this also by using a DFS with a reqular stack and we wouldn't neccesarily arrive to the solution with a faster runtime. However,
-// We will use Disjktra' algorithm  to increase the speed of the search while making sure optimally it is guaranteed;
+// We will use Disjktra' algorithm to increase the speed of the search while making sure optimally it is guaranteed.
 //We can use Dijkstra over the minimum accumulative HP to find a path towards the princess
 // and we want to also save the parents along the way, so we could reconstruct the route itself.
 //And, once we get to the destination, we can trace back and find the mininum accumulative HP along the way to induce the HP needed at the beginning of the trip
