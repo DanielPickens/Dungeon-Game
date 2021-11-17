@@ -1,4 +1,4 @@
- //We can initiate a 2D array and we can let dp represent the min health the knight needs to reach the end from a specific square
+ //We can initiate a 2D array where the dp array will represent the min health the knight needs to reach the end from a specific square
 // And we can then predict the amount the health that the knight should end on after he has saved the princess.
 //By evaluating the position of the knight If the princess is located at 'm - 1, n - 1'
 // and essientially if the knight continues to move right or down
